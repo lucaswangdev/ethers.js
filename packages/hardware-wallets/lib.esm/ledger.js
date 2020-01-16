@@ -10,7 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import { ethers } from "ethers";
 import { version } from "./_version";
-const logger = new ethers.utils.Logger(version);
+// const logger = new ethers.utils.Logger(version);
+const logger = console.log;
 import Eth from "@ledgerhq/hw-app-eth";
 // We store these in a separated import so it is easier to swap them out
 // at bundle time; browsers do not get HID, for example. This maps a string
